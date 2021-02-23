@@ -52,7 +52,7 @@ public class CursoTest {
 
 	@Test
 	public void testCurso() {
-		fail("Not yet implemented");
+		assertTrue(c.numeroAlumnos() == 0);
 	}
 
 	@Test
