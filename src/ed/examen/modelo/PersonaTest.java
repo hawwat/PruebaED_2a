@@ -6,9 +6,7 @@ import org.junit.Test;
 
 public class PersonaTest {
 
-
-	Persona p = new Persona("18475280R","Pepa","Hernadez");
-	
+	Persona p = new Persona("18475280R", "Pepa", "Hernadez");
 
 	@Test
 	public void testPersonaStringStringString() {
@@ -17,19 +15,36 @@ public class PersonaTest {
 
 	@Test
 	public void testGetDni() {
-	//comprobamos que el dni de p es exactamente el que hemos indicado al crear la persona
+		// comprobamos que el dni de p es exactamente el que hemos indicado al crear la
+		// persona
 		assertEquals(p.getDni(), "18475280R");
 	}
 
 	@Test
 	public void testSetDni() {
-		fail("Not yet implemented");
+		try {
+			p.setDni("00000000N");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		assertEquals(p.getDni(), "00000000N");
+
+		Boolean throwException = false;
+		try {
+			p.setDni("101010101");
+		} catch (Exception e) {
+			// TODO: handle exception
+			throwException = true;
+		}
+		assertTrue(throwException);
 	}
 
 	@Test
 	public void testGetNombre() {
 //comprobamos que el nombre es el mismo que acabamos de marcar
-assertEquals(p.getNombre(), "Pepa");
+		assertEquals(p.getNombre(), "Pepa");
 	}
 
 	@Test
