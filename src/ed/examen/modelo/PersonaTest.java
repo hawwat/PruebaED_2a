@@ -28,7 +28,8 @@ public class PersonaTest {
 
 	@Test
 	public void testGetNombre() {
-		fail("Not yet implemented");
+//comprobamos que el nombre es el mismo que acabamos de marcar
+assertEquals(p.getNombre(), "Pepa");
 	}
 
 	@Test
