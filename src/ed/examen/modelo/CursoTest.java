@@ -41,12 +41,13 @@ public class CursoTest {
 	@Test
 	public void testAniadirAlumno() {
 		c.aniadirAlumno(p);
-assertTrue(c.estaRegistrado(p.getDni())); 
+		assertTrue(c.estaRegistrado(p.getDni()));
 	}
 
 	@Test
 	public void testEstaRegistrado() {
-		fail("Not yet implemented");
+		c.aniadirAlumno(p);
+		assertTrue(c.estaRegistrado(p.getDni()));
 	}
 
 	@Test
