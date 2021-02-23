@@ -40,8 +40,8 @@ public class CursoTest {
 
 	@Test
 	public void testAniadirAlumno() {
-		
-
+		c.aniadirAlumno(p);
+assertTrue(c.estaRegistrado(p.getDni())); 
 	}
 
 	@Test
