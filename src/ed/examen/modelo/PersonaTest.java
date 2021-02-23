@@ -4,6 +4,12 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+/**
+ * @author Luis Mengíbar Sandoval
+ * @since 0.1
+ * @version 0.0.1
+ *
+ */
 public class PersonaTest {
 
 	Persona p = new Persona("18475280R", "Pepa", "Hernadez");
