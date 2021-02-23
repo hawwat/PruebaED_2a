@@ -16,10 +16,11 @@ public class Curso {
 
 	private List<Persona> listaAlumnos;
 
-	//Documentar y crear test unitario
-	 
+	// Documentar y crear test unitario
+
 	/**
 	 * Metodo para eliminar un alumno introduciendo su DNI.
+	 * 
 	 * @param dni numero de identificacion de la persona que queremos eliminar.
 	 * @throws Exception cuando el dni no dispone de 9 caracteres.
 	 */
@@ -45,17 +46,25 @@ public class Curso {
 	 */
 	/**
 	 * Método para añadir una persona al curso.
+	 * 
 	 * @param p persona que queremos añadir al curso.
 	 * 
 	 */
-	public void aniadirAlumno(Persona p){
+	public void aniadirAlumno(Persona p) {
 
-				listaAlumnos.add(p);
-		
+		listaAlumnos.add(p);
+
 	}
 
 	/*
 	 * Documentar y crear test unitario
+	 */
+	/**
+	 * Metodo para comprobar que una persona la tenemos registrada
+	 * 
+	 * @param dni con este parametro comprobamos la existencia de la persona si
+	 *            tenemos al buscar encontramos su dni.
+	 * 
 	 */
 	public Boolean estaRegistrado(String dni) {
 		int i = 0;
@@ -72,12 +81,21 @@ public class Curso {
 	/*
 	 * Documentar y crear test unitario
 	 */
+	/**
+	 * Constructor de la clase curso
+	 */
 	public Curso() {
 		listaAlumnos = new ArrayList<Persona>();
 	}
 
 	/*
 	 * Documentar y crear test unitario
+	 */
+	/**
+	 * Metodo para comprobar el numero de alumnos que tenemos dentro de nuestra
+	 * lista.
+	 * 
+	 * El metodo devuelve el numero de alumnos que contiene.
 	 */
 	public Integer numeroAlumnos() {
 		return listaAlumnos.size();
