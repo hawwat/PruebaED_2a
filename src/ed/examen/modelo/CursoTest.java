@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class CursoTest {
 	Persona p = new Persona("18475280R", "Pepe", "Alvarez");
-	
+
 	Persona p1 = new Persona("184752800R", "Pepe", "Alvarez");
 	Curso c = new Curso();
 
@@ -24,13 +24,12 @@ public class CursoTest {
 		}
 		int size2 = c.numeroAlumnos();
 		assertEquals(size, size2);
-		
-		
-		
+
 		// clase invalida
 		Boolean throwException = false;
-		try {c.aniadirAlumno(p1);
-			c.eliminarAlumno(p1.getDni());//Pongo un número de más
+		try {
+			c.aniadirAlumno(p1);
+			c.eliminarAlumno(p1.getDni());// Pongo un número de más
 		} catch (Exception e) {
 			// TODO: handle exception
 
@@ -41,18 +40,8 @@ public class CursoTest {
 
 	@Test
 	public void testAniadirAlumno() {
-		try {
-			c.aniadirAlumno(p);
+		
 
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-
-		try {
-
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
 	}
 
 	@Test
