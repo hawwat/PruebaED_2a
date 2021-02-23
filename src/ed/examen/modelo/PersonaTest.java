@@ -49,7 +49,9 @@ public class PersonaTest {
 
 	@Test
 	public void testSetNombre() {
-		fail("Not yet implemented");
+
+		p.setNombre("Alfreda");
+		assertEquals(p.getNombre(), "Alfreda");
 	}
 
 	@Test
